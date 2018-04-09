@@ -1,0 +1,297 @@
+html {
+    line-height: 1;
+}
+
+
+body {
+    background-color:#ffffff;
+    color:black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*NAVBAR STYLING*/
+
+#main-nav a {
+    font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#d24d57;
+    font-size: 0.875em;
+    text-decoration: none;
+    padding: 1em 2em;
+    margin-top: 2em;
+    display: block;
+}
+
+#main-nav ul {
+    display: block;
+    list-style: none;
+}
+
+#main-nav li {
+    float: left;
+    display: block;
+}
+
+#logo {
+    display: block;
+    text-indent: -9999em;
+    width: 68px;
+    height: 68px;
+    background: url(../images/logo.svg);
+    background-size: 68px 68px;
+    margin: 0.9375em 0 0.9375em 0;
+    float: left;
+    position: absolute;
+}
+
+.shadowed {
+    background: #fff;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/*HOME PAGE STYLING*/
+
+#home {
+    background: #d24d57 url(../images/header-bg.jpg) 50% 0 no-repeat fixed;
+    padding: 12.5em 0;
+    color: #fff;
+    text-align: center;
+    -webkit-transition: padding 0.2s linear;
+    -moz-transition: padding 0.2s linear;
+    -o-transition: padding 0.2s linear;
+    transition: padding 0.2s linear;
+}
+
+#home h1 {
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    font-size: 3.75em;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+#home h2 {
+    font-size: 1.625em;
+    font-family: "ff-meta-serif-web-pro", Georgia, serif;
+    line-height: 1.30769em;
+    padding: 0 10%;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+#home .check-work {
+    border-color: #fff;
+    /*color: white;*/
+    width: 20%;
+    margin: 3.75em auto 0 auto;
+    font-size: 1em;
+    padding: 1.5em 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.button {
+    font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: background-color 0.5s ease-in-out, 1s;
+    -moz-transition: background-color 0.5s ease-in-out, 1s;
+    -o-transition: background-color 0.5s ease-in-out, 1s;
+    transition: background-color 0.5s ease-in-out, 1s;
+    text-decoration: none;
+}
+
+/*FOOTER PAGE STYLING*/
+
+footer {
+    font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
+    padding: 7.5em 0;
+    background: #252525;
+}
+
+footer .page-wrap {
+    background: #252525;
+}
+
+#copy {
+    font-size: 0.875em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #cccccc;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+#copy a {
+    color: #d24d57;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: all 0.1s ease-in-out, 1s;
+    -moz-transition: all 0.1s ease-in-out, 1s;
+    -o-transition: all 0.1s ease-in-out, 1s;
+    transition: all 0.1s ease-in-out, 1s;
+}
+
+.follow-links-container {
+    display: table;
+    margin: 1em auto 0 auto;
+}
+
+#follow-links li {
+    float: left;
+    margin: 5px;
+}
+
+#follow-links a {
+    background: #333333;
+    background: rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    display: block;
+    margin: 0 auto;
+    color: #cccccc;
+    color: rgba(255, 255, 255, 0.2);
+    padding: 0.5em 1em 0.5em 3em;
+    line-height: 2em;
+    font-size: 0.75em;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all 0.1s ease-in-out, 1s;
+    -moz-transition: all 0.1s ease-in-out, 1s;
+    -o-transition: all 0.1s ease-in-out, 1s;
+    transition: all 0.1s ease-in-out, 1s;
+    text-decoration: none;
+    position: relative;
+}
+
+#follow-links .icon-twitter {
+    color: #00aced;
+}
+
+#follow-links a span {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    font-size: 1.625em;
+    -webkit-transition: all 0.1s ease-in-out, 1s;
+    -moz-transition: all 0.1s ease-in-out, 1s;
+    -o-transition: all 0.1s ease-in-out, 1s;
+    transition: all 0.1s ease-in-out, 1s;
+}
+
+#footer-about {
+    text-align: center;
+    line-height: 1.4em;
+    padding: 0 20%;
+    margin-top: 2em;
+    color: #4d4d4d;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.875em;
+}
+
+#footer-about a {
+    color: #808080;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: all 0.1s ease-in-out, 1s;
+    -moz-transition: all 0.1s ease-in-out, 1s;
+    -o-transition: all 0.1s ease-in-out, 1s;
+    transition: all 0.1s ease-in-out, 1s;
+}
+
+
+div, article, section, header, footer, nav, li {
+    position: relative;
+}
+
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+header[role="banner"] nav {
+    float: right;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+}
+  
+.page-wrap {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1600px
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.icon-heart, .icon-arrow-top, .icon-arrow-bottom, .icon-mail, .icon-twitter, .icon-dribbble, .icon-eye, .icon-menu {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
