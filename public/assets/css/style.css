@@ -55,14 +55,11 @@ body {
 /*HOME PAGE STYLING*/
 
 #home {
-    background: #d24d57 url(../images/header-bg.jpg) 50% 0 no-repeat fixed;
+    /*background: url(../images/books.jpg);*/
+    background:linear-gradient(rgb(210, 77, 87, .5), rgb(210, 77, 87, .6)), url("../images/books.jpg");
     padding: 12.5em 0;
     color: #fff;
     text-align: center;
-    -webkit-transition: padding 0.2s linear;
-    -moz-transition: padding 0.2s linear;
-    -o-transition: padding 0.2s linear;
-    transition: padding 0.2s linear;
 }
 
 #home h1 {
@@ -125,23 +122,23 @@ body {
 footer {
     font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
     padding: 7.5em 0;
-    background: #252525;
+    background: #d24d57;
 }
 
 footer .page-wrap {
-    background: #252525;
+    background: #d24d57;
 }
 
 #copy {
+
     font-size: 0.875em;
     text-transform: uppercase;
     text-align: center;
-    color: #cccccc;
-    color: rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
 #copy a {
-    color: #d24d57;
+    color: white;
     text-decoration: none;
     border-bottom: 1px solid transparent;
     -webkit-transition: all 0.1s ease-in-out, 1s;
@@ -156,6 +153,7 @@ footer .page-wrap {
 }
 
 #follow-links li {
+    list-style-type: none;
     float: left;
     margin: 5px;
 }
@@ -167,9 +165,8 @@ footer .page-wrap {
     border: 2px solid transparent;
     display: block;
     margin: 0 auto;
-    color: #cccccc;
-    color: rgba(255, 255, 255, 0.2);
-    padding: 0.5em 1em 0.5em 3em;
+    color: white;
+    padding: 01em 1em 1em 1em;
     line-height: 2em;
     font-size: 0.75em;
     text-align: center;
@@ -184,21 +181,6 @@ footer .page-wrap {
     transition: all 0.1s ease-in-out, 1s;
     text-decoration: none;
     position: relative;
-}
-
-#follow-links .icon-twitter {
-    color: #00aced;
-}
-
-#follow-links a span {
-    position: absolute;
-    top: 7px;
-    left: 7px;
-    font-size: 1.625em;
-    -webkit-transition: all 0.1s ease-in-out, 1s;
-    -moz-transition: all 0.1s ease-in-out, 1s;
-    -o-transition: all 0.1s ease-in-out, 1s;
-    transition: all 0.1s ease-in-out, 1s;
 }
 
 #footer-about {
@@ -294,4 +276,180 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
+}
+
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+
+* {
+	box-sizing: border-box;
+	line-height: 200%;
+}
+
+body {
+	background-color: #eee;
+}
+
+button {
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#all-articles {
+	background-color: #999;
+}
+
+#saved-articles {
+	background-color: #aaa;
+}
+
+#refresh-articles {
+	background-color: #bbb;
+}
+
+#all-articles:hover, #saved-articles:hover, #refresh-articles:hover {
+	background-color: #ccc;
+	opacity: 0.9;
+}
+
+#sitename {
+	float: left;
+	padding: 15px 11px;
+	height: 100%;
+	background-color: #92afcc;
+	font-size: 23px;
+	font-weight: bold;
+	color: #fff;
+	opacity: 0.7;
+}
+
+#cover {
+	width: 100%;
+}
+
+.story-body {
+	margin: auto;
+	width: 95%;
+	box-shadow: 0 0 10px #aaa;
+	background-color: #fff;
+}
+
+.story-body h2 {
+	background-color: #3e9cfc;
+}
+
+.story-body a {
+	float: left;
+	display: block;
+	width: 77%;
+	color: #fff;
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+.story-body button {
+	display: inline;
+	min-width: 1px;
+	background-color: #77b9fd;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.story-body button:hover {
+	background-color: #aed4fb;
+	box-shadow: 0 0 10px #fff;
+}
+
+
+
+.message {
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #aaa;
+	margin: auto;
+	text-align: center;
+	padding: 40px 90px;
+	color: #aaa;
+	background-color: #fff;
+}
+
+#addnote {
+	display: none;
+	justify-content: center;
+	align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 4;
+}
+
+#note {
+	padding: 0 20px 20px 20px;
+}
+
+#note-displayer {
+	width: 700px;
+	background-color: #fff;
+	z-index: 5;
+}
+
+#note-displayer h2 {
+	background-color: #3181d3;
+	color: #fff;
+	padding: 0 20px;
+	margin: 0;
+}
+
+#note-displayer h3 {
+	padding: 0 20px;
+	margin: 0;
+	background-color: #93d2f7;
+	color: #3181d3;
+}
+
+#note-displayer label {
+	color: #aaa;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#note-displayer button {
+	min-width: 128px;
+	background-color: #77b9fd;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 0 10px;
+	border-radius: 5px
+}
+
+#note-displayer button:hover {
+	background-color: #aed4fb;
+	box-shadow: 0 0 10px #fff;
+}
+
+#note-title {
+	width: 100%;
+	margin: 0 0 10px 0;
+	padding: 5px;
+	font-size: 15px;
+}
+
+#note-body {
+	width: 100%;
+	padding: 5px;
+	font-size: 15px;
 }

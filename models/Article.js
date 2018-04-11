@@ -16,7 +16,7 @@ var Articleschema = new Schema ({
     },
     status: {
         type: String,
-        default: "Save Article"
+        default: "Save Book"
     },
     created: {
         type: Date,
