@@ -79,25 +79,12 @@ app.get("/saved", function(req, res) {
 			res.render("saved", {saved: data});
 		}
   })
-})
+});
 
 app.get("/:id", function(req, res) {
   Article.findById(req.params.id, function(err, data) {
     res.json(data);
   })
-})
-
-app.get("/books", function(req, res) {
-  // Grab every document in the Articles collection
-  db.Article.find({})
-    .then(function(dbBook) {
-      // If we were able to successfully find Articles, send them back to the client
-      res.json(dbBook);
-    })
-    .catch(function(err) {
-      // If an error occurred, send it to the client
-      res.json(err);
-    });
 });
 
 app.post("/save/:id", function(req, res) {
@@ -132,7 +119,7 @@ app.get("/note/:id", function(req, res) {
   Article.findById(id).populate("note").exec(function(err, data) {
     res.send(data.note);
   })
-})
+});
 
 // Listen on port 3000
 app.listen(8080, function() {

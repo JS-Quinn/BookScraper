@@ -33,18 +33,6 @@ body {
     display: block;
 }
 
-#logo {
-    display: block;
-    text-indent: -9999em;
-    width: 68px;
-    height: 68px;
-    background: url(../images/logo.svg);
-    background-size: 68px 68px;
-    margin: 0.9375em 0 0.9375em 0;
-    float: left;
-    position: absolute;
-}
-
 .shadowed {
     background: #fff;
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -55,11 +43,15 @@ body {
 /*HOME PAGE STYLING*/
 
 #home {
-    /*background: url(../images/books.jpg);*/
     background:linear-gradient(rgb(210, 77, 87, .5), rgb(210, 77, 87, .6)), url("../images/books.jpg");
     padding: 12.5em 0;
     color: #fff;
     text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 #home h1 {
