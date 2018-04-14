@@ -9,7 +9,6 @@ var logger = require("morgan");
 var body = require("body-parser");
 var method = require("method-override");
 var axios = require("axios");
-var db = require('./models');
 
 // Require models
 var Note = require("./models/Note");
@@ -66,7 +65,7 @@ app.get("/scrape", function(req, res) {
         .children("a")
         .attr("href");
 
-      db.Article.create(result)
+      Article.create(result)
         .then(function(dbArticle) {
           console.log(dbArticle);
         })
