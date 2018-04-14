@@ -127,6 +127,6 @@ app.get("/note/:id", function(req, res) {
 });
 
 // Listen on port 3000
-app.listen(8080, function() {
-  console.log("App running on port 8080!");
+app.listen(port, function() {
+  //console.log("App running on port 8080!");
 });
