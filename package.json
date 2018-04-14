@@ -14,9 +14,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JS-Quinn/MongoScraper/issues"
+    "url": "https://github.com/JS-Quinn/BookScraper/issues"
   },
-  "homepage": "https://github.com/JS-Quinn/MongoScraper#readme",
+  "homepage": "https://github.com/JS-Quinn/BookScraper#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
